@@ -1,4 +1,61 @@
 # titanic
+
+# Import NumPy library
+import numpy as np
+
+# Basic arithmetic operations using NumPy
+def add(a, b):
+    return np.add(a, b)
+
+def subtract(a, b):
+    return np.subtract(a, b)
+
+def multiply(a, b):
+    return np.multiply(a, b)
+
+def divide(a, b):
+    try:
+        return np.divide(a, b)
+    except ZeroDivisionError:
+        return "Error! Division by zero."
+
+
+# Trigonometric operations using NumPy
+def sine(angle):
+    return np.sin(np.radians(angle))
+
+def cosine(angle):
+    return np.cos(np.radians(angle))
+
+def tangent(angle):
+    return np.tan(np.radians(angle))
+
+
+# Logarithm and exponent functions
+def logarithm(value, base=10):
+    return np.log10(value) if base == 10 else np.log(value)
+
+def exponent(value):
+    return np.exp(value)
+
+def power(base, exp):
+    return np.power(base, exp)
+
+
+# Matrix operations using NumPy
+def matrix_add(matrix1, matrix2):
+    return np.add(matrix1, matrix2)
+
+def matrix_multiply(matrix1, matrix2):
+    return np.dot(matrix1, matrix2)
+
+def matrix_transpose(matrix):
+    return np.transpose(matrix)
+
+def matrix_determinant(matrix):
+    return np.linalg.det(matrix)
+
+
 # Main menu for calculator
 def main_menu():
     print("📚 NumPy-Based Scientific Calculator 📚")
